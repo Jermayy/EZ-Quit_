@@ -28,7 +28,7 @@ render(){
             Login
           </Button>
         
-        
+        <a href="#">Sign Up</a>
         </Form>
         
            </div> 

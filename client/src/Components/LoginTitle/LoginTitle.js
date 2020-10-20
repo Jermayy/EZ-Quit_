@@ -12,8 +12,7 @@ export default class LoginTitle extends Component {
   <Container>
     <h1>EZ-Quit</h1>
     <p>
-      This is a modified jumbotron that occupies the entire horizontal space of
-      its parent.
+      Ease your way to smoking less
     </p>
   </Container>
 </Jumbotron>
