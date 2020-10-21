@@ -10,10 +10,7 @@ export const Login = ()=> {
 <div className="Login">
   
   <LoginTitle></LoginTitle>
- 
-
- 
-  <LoginBlock></LoginBlock>
+   <LoginBlock></LoginBlock>
   
 </div>
     )
