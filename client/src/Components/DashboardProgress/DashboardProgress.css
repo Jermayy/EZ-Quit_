@@ -1,0 +1,55 @@
+
+.dashboard{
+   
+}
+
+.dashboardBody{
+    margin: 10vh;
+    margin-bottom: 8vw;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#counter{
+    width: 40vw;
+    height: 40vw;
+       border-radius: 100%;
+       border-width: 2vw;
+    position: relative;
+    justify-content: center;
+  flex-direction: column;
+ 
+
+}
+
+#counterNumber{
+    display: flex;
+    justify-content: center;
+align-items: center;
+
+}
+
+p{
+    margin:0;
+    padding: 0;
+       
+  font-size: 2rem;
+ 
+}
+
+.btnInfo{
+    margin: 5vw;
+}
+.btnSmoke{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80vw;
+
+}
+
+#metricBox{
+    margin: 10vw;
+
+    
+}
