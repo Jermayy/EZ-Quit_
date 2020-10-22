@@ -1,0 +1,11 @@
+.userInput{
+    align-items: center;
+    margin: 10vh auto;
+    
+    padding: 0;
+    max-width: 80vw;
+}
+
+.header{
+    margin: 5vh;
+}
