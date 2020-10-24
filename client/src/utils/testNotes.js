@@ -19,6 +19,20 @@ export default [
 "time":"3:00pm",
 "smoke":"1",
 "note":"Managed to go almost 2 days without having one but work got stressful - just shows I am improving"
+},
+{
+"id":4,
+"date":"15/12/2020",
+"time":"3:00pm",
+"smoke":"1",
+"note":"Managed to go almost 2 days without having one but work got stressful - just shows I am improving"
+},
+{
+"id":5,
+"date":"15/12/2020",
+"time":"3:00pm",
+"smoke":"1",
+"note":"Managed to go almost 2 days without having one but work got stressful - just shows I am improving"
 }
 
 

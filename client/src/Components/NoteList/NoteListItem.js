@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
 import './NoteListItem.css';
 
@@ -13,10 +14,15 @@ export const NoteListItem =({date, time, smoke, note})=>{
             className="noteCard"
             >
              <Card.Body>
-              <Card.Title> 
-                  {date} 
-                  {time}
-                  {smoke}
+              <Card.Title className="noteInfo"> 
+                 <div >
+                 <div>Date : {date}</div> 
+                  <div>Time : {time}</div>
+                  <div>No. of Smokes had : {smoke}</div>
+                  </div>
+                  <div className="noteButton">
+                  <Button variant="danger" size="sm" id="button">Delete</Button>
+                  </div>
               </Card.Title>
               
               <Card.Text>
