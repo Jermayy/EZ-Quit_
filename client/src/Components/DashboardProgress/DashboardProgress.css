@@ -19,6 +19,7 @@
     position: relative;
     justify-content: center;
   flex-direction: column;
+  border-color: cornflowerblue;
  
 
 }
@@ -38,15 +39,24 @@ p{
  
 }
 
+.progressBar{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80vw;
+}
+
+
 .btnInfo{
     margin: 5vw;
 }
+
 .btnSmoke{
     margin: 0 auto;
     padding: 0;
     max-width: 80vw;
 
 }
+
 
 #metricBox{
     margin: 10vw;
