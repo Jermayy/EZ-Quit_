@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 
 import Button from 'react-bootstrap/Button';
 import './LoginBlock.css'
+import { Link } from 'react-router-dom';
 
 export default class LoginBlock extends Component{
 render(){
@@ -24,11 +25,11 @@ render(){
           </Form.Group>
         
                     
-          <Button variant="primary" type="Submit">
+         <Link to="/Dashboard"> <Button variant="primary" type="Submit">
             Login
-          </Button>
+          </Button></Link>
         
-        <a href="#">Sign Up</a>
+        <Link href="/SignUp">Sign Up</Link>
         </Form>
         
            </div> 

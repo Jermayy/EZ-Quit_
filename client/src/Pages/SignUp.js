@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { SignUpHeader } from '../Components/SignUpHeader/SignUpHeader';
 import { SignUpBlock } from '../Components/SignUpBlock/SignUpBlock';
 
 
-export const SignUp = ()=>{
+export default class SignUp extends Component{
+
+render(){
 
     return(
 <div className="Signup">
@@ -15,4 +17,5 @@ export const SignUp = ()=>{
 </div>
 
 )
+}
 }

@@ -1,15 +1,16 @@
 import React, { Component} from 'react';
 import Navbar from 'react-bootstrap/Navbar'
+import { Link } from 'react-router-dom';
 
 export class SignUpHeader extends Component {
 render(){
     return(
         <Navbar>
-  <Navbar.Brand href="#home">EZ-Quit</Navbar.Brand>
+  <Navbar.Brand href="/">EZ-Quit</Navbar.Brand>
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
     <Navbar.Text>
-     <a href="#login">Sign Up</a>
+     <Link to="/">Sign Up</Link>
     </Navbar.Text>
   </Navbar.Collapse>
 </Navbar>

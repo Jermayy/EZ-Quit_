@@ -5,7 +5,7 @@ import NoteUserInput from '../Components/NoteUserInput/NoteUserInput';
 
 import './NewNote.css';
 
-export class NewNote extends Component{
+export default class NewNote extends Component{
 
     render(){
 

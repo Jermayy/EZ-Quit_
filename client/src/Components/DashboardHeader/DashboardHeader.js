@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
 import './DashboardHeader.css';
 
-export default class DashboardHeader extends Component{
 
-render(){
+export default function DashboardHeader () {
+
+
 
     return(
         <Navbar bg="dark" variant="dark">
-        <Navbar.Brand href="#Notes">NOTES</Navbar.Brand>
+        <Navbar.Brand href="/NoteList">NOTES</Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
-           <a href="#notes">LOGOUT</a>
+           <Link to="/">LOGOUT</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>
     )
-}
+
 }

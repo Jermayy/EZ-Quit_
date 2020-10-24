@@ -7,7 +7,7 @@ import NoteListWrapper from '../Components/NoteList/NoteListWrapper';
 import SavedNotes from '../utils/testNotes';
 import './NoteList.css';
 
-export class NoteList extends Component{
+export default class NoteList extends Component{
 
 state = {
     SavedNotes
