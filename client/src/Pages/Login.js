@@ -12,7 +12,7 @@ export default class Login extends Component {
         </div>
 
         <div className="LoginBlock">
-        <LoginBlock></LoginBlock>
+          <LoginBlock></LoginBlock>
         </div>
       </div>
     );
