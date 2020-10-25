@@ -10,7 +10,7 @@ render(){
   <Navbar.Toggle />
   <Navbar.Collapse className="justify-content-end">
     <Navbar.Text>
-     <Link to="/">Sign Up</Link>
+     <Link to="/SignUp">Sign Up</Link>
     </Navbar.Text>
   </Navbar.Collapse>
 </Navbar>

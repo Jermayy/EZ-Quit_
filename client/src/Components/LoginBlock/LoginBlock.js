@@ -27,9 +27,10 @@ render(){
                     
          <Link to="/Dashboard"> <Button variant="primary" type="Submit">
             Login
-          </Button></Link>
+          </Button>
+          </Link>
         
-        <Link href="/SignUp">Sign Up</Link>
+        <Link to="/SignUp">Sign Up</Link>
         </Form>
         
            </div> 
