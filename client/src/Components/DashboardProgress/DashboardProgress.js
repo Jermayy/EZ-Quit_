@@ -44,7 +44,8 @@ const updateCurrentSmokeCount =()=>{
 
 const updateProgressBar = ()=>{
    let status = currentSmokeCount / smokeLimit * 100;
-    setProgressBarStatus(status);
+   let result = status.toFixed(2)
+    setProgressBarStatus(result);
 }
 
 // --------------------- Modal logic --------------
