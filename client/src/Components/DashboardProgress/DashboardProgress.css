@@ -57,6 +57,13 @@ p{
 
 }
 
+.addNewNoteBtn{
+    margin: 0 auto;
+    margin-top: 5vw;
+    padding: 0;
+    max-width: 80vw;
+}
+
 
 #metricBox{
     margin: 10vw;

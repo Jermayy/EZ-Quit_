@@ -8,6 +8,7 @@ import FormGroup from 'react-bootstrap/FormGroup'
 import FormControl from 'react-bootstrap/FormControl'
 
 import './DashboardProgress.css'
+import { Link } from 'react-router-dom';
 
 
 export const DashboardProgress =()=>{
@@ -87,6 +88,14 @@ const limitRef = useRef();
   </Button>
   </div>
 
+
+ <div className="addNewNoteBtn">
+<Link  to="/NewNote">
+<Button variant="info" size="md" block>
+    Add new note
+  </Button>
+</Link>
+</div>
 
 {/* Box for metrics  */}
 
