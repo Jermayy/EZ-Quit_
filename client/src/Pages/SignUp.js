@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { SignUpBlock } from "../Components/SignUpBlock/SignUpBlock";
+import SignUpBlock from "../Components/SignUpBlock/SignUpBlock";
 import SignUpHeader from "../Components/SignUpHeader/SignUpHeader";
 
 export default class SignUp extends Component {

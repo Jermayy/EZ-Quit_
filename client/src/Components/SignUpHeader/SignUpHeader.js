@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 
-export default class SignUpHeader extends Component {
-  render() {
+export default function SignUpHeader () {
+  
     return (
       <Navbar>
         <Navbar.Brand href="/">EZ-Quit</Navbar.Brand>
@@ -16,4 +16,3 @@ export default class SignUpHeader extends Component {
       </Navbar>
     );
   }
-}
