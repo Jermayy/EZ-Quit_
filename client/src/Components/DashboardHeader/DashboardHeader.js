@@ -2,14 +2,17 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import { Link } from "react-router-dom";
 import "./DashboardHeader.css";
-import moment from "moment";
 
 import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 
+const dayjs = require('dayjs');
+
 
 export default function DashboardHeader() {
-  let time = moment().format("MMMM Do YYYY, h:mm:ss a");
+  const date = JSON.stringify(dayjs().format('DD/MM/YYYY'));
+  const time = JSON.stringify(dayjs().format('hh:mm A'));
+  
 
   const history = useHistory();
 
@@ -27,10 +30,12 @@ const logout = (event) =>{
     <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="/NoteList">NOTES</Navbar.Brand>
       <Navbar.Toggle />
+      <p className="justify-content-center timeDate">{date}</p>
+      <p className="justify-content-center timeDate">{time}</p>
       <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          <div>{time}</div>
-        </Navbar.Text>
+      
+         
+       
 
         <Navbar.Text>
           <div onClick={logout}>LOGOUT</div>
