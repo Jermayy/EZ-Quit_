@@ -1,10 +1,9 @@
-import React, { useRef, useState, componentDidMount } from 'react';
+import React, { useRef, useState } from 'react';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Modal from 'react-bootstrap/Modal'
 import InputGroup from 'react-bootstrap/InputGroup'
-import FormGroup from 'react-bootstrap/FormGroup'
 import FormControl from 'react-bootstrap/FormControl'
 
 import './DashboardProgress.css'
@@ -22,24 +21,22 @@ export const DashboardProgress =()=>{
   let[progressBarStatus, setProgressBarStatus] = useState(100);
 
 
-  // const componentDidMount = ()=>{
-  //   setSmokeLimit(10);
-  // }
-
-
 
   const setLimit = (event) =>{
       event.preventDefault();
       setSmokeLimit(smokeLimit = limitRef.current.value);
-      handleClose();
+            handleClose();
+            setProgressBarStatus(100);
+            setSmokeCounter(0);
       console.log(`current smoke limit : ${smokeLimit}`);
   }
 
   const handleIncrement = () => {
- 
+  
     setSmokeCounter(smokeCounter + 1);
     console.log(`smoke counter at :  ${smokeCounter}`)
     updateCurrentSmokeCount();
+ 
   };
 
 const updateCurrentSmokeCount =()=>{
@@ -113,7 +110,7 @@ const limitRef = useRef();
       </Card.Body>
   </Card>
 
-  <Button variant="warning" className='btnInfo' >Set Reminder in Calendar</Button>
+  <Button variant="warning" className='btnInfo' >Calendar</Button>
 
 {/* ----- Pop up for edit smoke limit ------- */}
   <div className='DashboardPopUp'>
