@@ -15,7 +15,7 @@ const noteSchema = new Schema({
         type: Number,
         required: true
     },
-    body:{
+    note:{
         type: String,
         required: true
     }

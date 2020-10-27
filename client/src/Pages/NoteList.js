@@ -1,22 +1,32 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import NoteHeader from "../Components/NoteHeader/NoteHeader";
 import { NoteListItem } from "../Components/NoteList/NoteListItem";
 import NoteListWrapper from "../Components/NoteList/NoteListWrapper";
 
 import SavedNotes from "../utils/testNotes";
+import {NoteAPI} from '../apis/NoteAPI'; 
+
+
 import "./NoteList.css";
 
-export default class NoteList extends Component {
-  state = {
-    SavedNotes,
-  };
+export default function NoteList () {
+  // state = {
+  //   SavedNotes,
+  // };
 
-  render() {
+const [notes, setNotes] = useState([]);
+
+useEffect(async ()=>{
+const notes = await NoteAPI.getNotes()
+setNotes(notes)
+}, [])
+
+
     return (
       <div>
         <NoteHeader></NoteHeader>
         <NoteListWrapper>
-          {this.state.SavedNotes.map((note) => (
+          {notes.map((note) => (
             <NoteListItem
               key={note.id}
               date={note.date}
@@ -29,4 +39,4 @@ export default class NoteList extends Component {
       </div>
     );
   }
-}
+
