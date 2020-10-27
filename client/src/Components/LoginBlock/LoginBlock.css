@@ -1,3 +1,11 @@
 .loginBlock{
     z-index: 1;
+    margin: 0 auto;
+    padding: 0;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.signup{
+    margin: 5vw;
 }

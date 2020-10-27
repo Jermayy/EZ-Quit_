@@ -24,13 +24,10 @@ export default function LoginBlock() {
 
   return (
     <div className="loginBlock">
-      <Form onSubmit={signIn}>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Label>Email address</Form.Label>
+      <Form onSubmit={signIn} >
+        <Form.Group controlId="formBasicEmail" >
+          <Form.Label>Email Address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" ref={usernameRef}/>
-          <Form.Text className="text-muted" >
-            Enter your email address
-          </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
@@ -43,8 +40,9 @@ export default function LoginBlock() {
             Login
           </Button>
        
-
+        <div className="signup">
         <Link to="/SignUp">Sign Up</Link>
+        </div>
       </Form>
     </div>
   );

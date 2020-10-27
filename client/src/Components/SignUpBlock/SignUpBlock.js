@@ -29,9 +29,7 @@ export default function SignUpBlock () {
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" ref={usernameRef} />
-            <Form.Text className="text-muted">
-              Enter your email address
-            </Form.Text>
+
           </Form.Group>
 
           <Form.Group controlId="formBasicPassword">
@@ -42,8 +40,9 @@ export default function SignUpBlock () {
           <Button variant="primary" type="Submit" onClick={signUp}>
             Register
           </Button>
-
+          <div className="backToLogin">
           <Link to="/">Back to login</Link>
+          </div>
         </Form>
       </div>
     );
