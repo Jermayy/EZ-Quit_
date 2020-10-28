@@ -1,0 +1,7 @@
+.NewNote{
+    background: rgb(255,66,0);
+    background: linear-gradient(38deg, rgba(255,66,0,1) 0%, rgba(255,241,0,1) 100%);
+     margin: 0 auto;
+   padding-bottom: 25vh;
+    box-sizing: border-box;
+}

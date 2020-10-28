@@ -7,9 +7,11 @@ import "./NewNote.css";
 export default class NewNote extends Component {
   render() {
     return (
-      <div>
+      <div className="NewNote">
         <NoteHeader></NoteHeader>
+      <div className="input">
         <NoteUserInput></NoteUserInput>
+        </div>
       </div>
     );
   }

@@ -43,7 +43,7 @@ export default function NoteUserInput() {
   return (
     <div className="userInput">
       <h2 className="header"> New Note </h2>
-
+      <div className="inputBlock">
       <InputGroup className="mb-3">
         <InputGroup.Prepend>
           <InputGroup.Text type="date" id="inputGroup-sizing-default">
@@ -93,6 +93,8 @@ export default function NoteUserInput() {
       <Button variant="warning" onClick={handleSubmit}>
         Add Note
       </Button>
+
+      </div>
     </div>
   );
 }
