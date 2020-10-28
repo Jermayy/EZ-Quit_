@@ -7,7 +7,7 @@
 [4. License Details](#License-Details)  
 [5. List of Contributors](#List-of-Contributors)  
 [6. Tests](#Tests)  
-[7. Future Developments](#Future Developments)  
+[7. Future Developments](#Future-Developments)  
 [8. Questions](#Questions)  
 
 ## Description:
