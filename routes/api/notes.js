@@ -19,7 +19,7 @@ router.post("/notes", async (req, res) => {
   });
   console.log("log #2");
   // req.user.addNote(newNote);
-  
+
   console.log("log #3 after add note to user");
   res.json(newNote);
 });
