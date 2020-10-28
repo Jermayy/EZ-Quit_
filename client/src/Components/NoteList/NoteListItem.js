@@ -1,19 +1,19 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
+// import Button from "react-bootstrap/Button";
 
 import axios from 'axios';
 
 import "./NoteListItem.css";
 
-export const NoteListItem = ({ _id,date, time, smoke, note }) => {
+export const NoteListItem = ({date, time, smoke, note, Button }) => {
 
 
-async function deleteNote(){
-await axios.delete(`/api/notes/${_id}`);
+// async function deleteNote(){
+// await axios.delete(`/api/notes/${_id}`);
 
-// window.location.reload();
-}
+// // window.location.reload();
+// }
 
 
 
@@ -27,9 +27,13 @@ await axios.delete(`/api/notes/${_id}`);
             <div>No. of Smokes had : {smoke}</div>
           </div>
           <div className="noteButton">
-            <Button variant="danger" size="sm" id="button" onClick={deleteNote}>
+            {/* <Button variant="danger" size="sm" id="button" onClick={deleteNote}>
               Delete
-            </Button>
+            </Button> */}
+
+
+          <Button />
+
           </div>
         </Card.Title>
 

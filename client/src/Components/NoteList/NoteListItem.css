@@ -4,10 +4,6 @@
     padding: 0;
     width: 80vw;
 }
-/* 
-.noteInfo{
-    display: inline-flex;
-} */
 .content{
     display: wrap;
     text-align: left;

@@ -9,11 +9,21 @@ var UserSchema = new mongoose.Schema({
   },
 
   notes: {
-    type: [],
+    type: [{
+      type: mongoose.Schema.Types.ObjectId 
+     }],
+    default: []
   },
 });
 
 UserSchema.plugin(passportLocalMongoose);
+
+UserSchema.methods.addNote = function (note){
+  this.notes.push(mongoose.Types.ObjectId(note._id));
+  return this.save();
+}
+
+
 
 var User = mongoose.model("User", UserSchema);
 module.exports = User;
