@@ -29,7 +29,10 @@ if (process.env.NODE_ENV === "production") {
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ezquit", {
   useNewUrlParser: true,
-  useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+
 });
 
 app.use(
