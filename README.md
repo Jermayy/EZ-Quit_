@@ -19,7 +19,7 @@ Within the Terminal type "npm i" or "npm install" to install dependencies to run
 ## Usage:
 to run the application locally type "npm run start" into your Terminal. Alternatively a live deployed version of the application can be accessed here:  https://enigmatic-depths-23820.herokuapp.com/
 
-[](/screenshots/1.png)
+![](/screenshots/1.png)
 
 ![](/screenshots/2.png)
 
