@@ -4,8 +4,21 @@
     padding: 0;
     width: 80vw;
     border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+    background: rgba(255, 255, 255, 0);
 }
 
 .backToLogin{
     margin: 5vw;
+ 
 }
+
+.backtologinLink{
+font-size: 1.5rem;
+color: black;
+}
+
+.label{
+    font-size: 1.5rem;
+    }

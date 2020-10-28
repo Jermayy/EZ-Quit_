@@ -27,21 +27,23 @@ export default function SignUpBlock () {
       <div className="SignUpBlock">
         <Form onSubmit={signUp}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
+            <Form.Label className="label">Email address</Form.Label>
             <Form.Control type="email" placeholder="Enter email" ref={usernameRef} />
 
           </Form.Group>
 
           <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
+            <Form.Label className="label">Password</Form.Label>
             <Form.Control type="password" placeholder="Password"ref={passwordRef} />
           </Form.Group>
 
-          <Button variant="primary" type="Submit" onClick={signUp}>
+          <Button variant="dark" type="Submit" onClick={signUp}>
             Register
           </Button>
           <div className="backToLogin">
-          <Link to="/">Back to login</Link>
+          <Link to="/">
+            <p className="backtologinLink">Back to login</p>
+            </Link>
           </div>
         </Form>
       </div>

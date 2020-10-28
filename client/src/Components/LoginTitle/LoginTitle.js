@@ -9,7 +9,7 @@ export default class LoginTitle extends Component {
       <Jumbotron fluid>
         <Container>
           <h1>EZ-Quit</h1>
-          <p>Ease your way to smoking less</p>
+          <h3>Ease your way to smoking less</h3>
         </Container>
       </Jumbotron>
     );

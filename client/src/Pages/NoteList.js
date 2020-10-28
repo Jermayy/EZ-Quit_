@@ -36,7 +36,7 @@ export default function NoteList() {
   }
 
   return (
-    <div>
+    <div className="page">
       <NoteHeader></NoteHeader>
       <NoteListWrapper>
         {notes.map((note) => (

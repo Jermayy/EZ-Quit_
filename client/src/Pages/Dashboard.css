@@ -1,0 +1,9 @@
+.page{
+    background: rgb(255,66,0);
+    background: linear-gradient(38deg, rgba(255,66,0,1) 0%, rgba(255,241,0,1) 100%);
+ 
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 40vh;
+    box-sizing: border-box;
+}

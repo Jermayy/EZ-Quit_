@@ -1,17 +1,19 @@
-.Login {
+.Signup{
     background: rgb(255,66,0);
     background: linear-gradient(38deg, rgba(255,66,0,1) 0%, rgba(255,241,0,1) 100%);
-    flex-wrap: wrap;
+ 
     margin: 0 auto;
-    padding-bottom: 33vh;
+    padding-top: 5vh;
+    padding-bottom: 40vh;
     box-sizing: border-box;
 }
 
-.LoginTitle{
-    z-index: 0;
+.header{
+    margin: 0 auto;
+    padding: 0
 }
 
-.LoginBlock{
+.signupBlock{
     z-index: 1;
     margin: 5vh;
     padding: 0;

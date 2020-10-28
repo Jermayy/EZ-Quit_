@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+html{
+  background: rgb(255,66,0);
+background: linear-gradient(38deg, rgba(255,66,0,1) 0%, rgba(255,241,0,1) 100%);
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;

@@ -26,22 +26,24 @@ export default function LoginBlock() {
     <div className="loginBlock">
       <Form onSubmit={signIn} >
         <Form.Group controlId="formBasicEmail" >
-          <Form.Label>Email Address</Form.Label>
+          <Form.Label className="label">Email Address</Form.Label>
           <Form.Control type="email" placeholder="Enter email" ref={usernameRef}/>
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          <Form.Label className="label">Password</Form.Label>
           <Form.Control type="password" placeholder="Password" ref={passwordRef}/>
         </Form.Group>
 
        
-          <Button variant="primary" type="Submit" onClick={signIn}>
+          <Button variant="dark" type="Submit" onClick={signIn} className="button">
             Login
           </Button>
        
         <div className="signup">
-        <Link to="/SignUp">Sign Up</Link>
+        <Link to="/SignUp">
+          <p className="signUpLink">Sign Up</p>
+          </Link>
         </div>
       </Form>
     </div>

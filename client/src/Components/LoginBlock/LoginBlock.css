@@ -4,8 +4,26 @@
     padding: 0;
     width: 80vw;
     border-radius: 10px;
+    box-sizing: border-box;
+    font-family: 'Oswald',Arial, Helvetica, sans-serif;
+
 }
 
 .signup{
     margin: 5vw;
+    
+}
+
+.label{
+font-size: 1.5rem;
+}
+
+.signUpLink{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.button{
+    
+
 }
