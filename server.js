@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
 const app = express();
+const cookieSession = require('cookie-session');
 // 
 
 
@@ -36,9 +37,10 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/ezquit", {
 });
 
 app.use(
-  session({
+  cookieSession({
     name: "session-id",
-    secret: "123-456-789",
+    keys: ["123-456-789"],
+    maxAge: 24 * 60 * 60 * 1000, // 24 hours
     saveUninitialized: false,
     resave: false,
   })
