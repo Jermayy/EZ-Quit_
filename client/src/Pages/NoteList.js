@@ -16,7 +16,7 @@ export default function NoteList() {
 
   const [notes, setNotes] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
     // const res = await NoteAPI.getNotes()
     // console.log(res.data);
     // setNotes(res.data)
@@ -31,6 +31,7 @@ export default function NoteList() {
 
   async function deleteNote(id) {
     await NoteAPI.deleteNote(id);
+    console.log(id);
     renderNotes();
     // window.location.reload();
   }
@@ -52,7 +53,7 @@ export default function NoteList() {
                 variant="danger"
                 size="sm"
                 id="button"
-                onClick={deleteNote}
+                onClick={()=>deleteNote(note._id)}
               >
                 Delete
               </Button>

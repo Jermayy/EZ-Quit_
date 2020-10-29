@@ -9,10 +9,10 @@ export default {
   },
 
   async getSingleNote(id) {
-    return axios.get("api/notes/" + id);
+    return axios.get("/api/notes/" + id);
   },
 
   async deleteNote(id) {
-    return axios.delete("api/notes/" + id);
+    return axios.delete("/api/notes/" + id);
   },
 };

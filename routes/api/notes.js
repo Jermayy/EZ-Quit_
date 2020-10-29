@@ -4,6 +4,7 @@ const router = express.Router();
 
 //Get all notes
 router.get("/notes", async (req, res) => {
+  console.log(req.user);
   const allNotes = await Note.find({});
   res.json(allNotes);
 });
@@ -34,7 +35,7 @@ return res.json(note)
 //Delete Note
 router.delete("/notes/:id", async (req, res) => {
   console.log('delete route hit')
-  const result = await Note.deleteOne({ _id: req.params._id });
+  const result = await Note.deleteOne({ _id: req.params.id });
   console.log(result);
   return res.json(result)
   
