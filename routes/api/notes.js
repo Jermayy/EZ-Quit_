@@ -1,11 +1,13 @@
 const Note = require("../../models/note");
 const express = require("express");
 const router = express.Router();
+const passport = require('passport');
+
 
 //Get all notes
 router.get("/notes", async (req, res) => {
   console.log(req.user);
-  const allNotes = await Note.find({});
+  const allNotes = await Note.find({userid: req.user._id});
   res.json(allNotes);
 });
 
@@ -13,6 +15,7 @@ router.get("/notes", async (req, res) => {
 router.post("/notes", async (req, res) => {
   console.log("post route");
   const newNote = await Note.create({
+    userid: req.user._id,
     date: req.body.date,
     time: req.body.time,
     smokes: req.body.smoke,
