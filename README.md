@@ -36,8 +36,7 @@ none
 
 
 ## Future Developments:
-* Saved notes to link with user login
-* in built Calendar scheduler for users to set goal dates (eg. will be smoke free)
+* In built Calendar scheduler for users to set goal dates (eg. will be smoke free)
 * Send Calendar reminder/events to external calendar applications such as Google and iCal.
 * Track user's unique day to day metrics to further present user's progress in an intuitive visual manner (eg. Graphs)
 
