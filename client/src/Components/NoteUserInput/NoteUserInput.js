@@ -10,7 +10,7 @@ import "./NoteUserInput.css";
 import NoteAPI from '../../apis/NoteAPI'; 
 import { useHistory } from 'react-router-dom';
 
-
+const dayjs = require('dayjs')
 export default function NoteUserInput() {
 
   const history = useHistory();
@@ -22,18 +22,24 @@ export default function NoteUserInput() {
   const smokeRef = useRef();
   const bodyRef = useRef();
 
+
+  const date = JSON.stringify(dayjs().format("DD/MM/YYYY"));
+  const dateDisplay = date.replace(/['"]+/g, "");
+  const time = JSON.stringify(dayjs().format("hh:mm A"));
+  const timeDisplay = time.replace(/['"]+/g, "");
+
   const handleSubmit = async (event) => {
     event.preventDefault();
        
   const response = await NoteAPI.addNote({
-      date: dateRef.current.value,
-      time: timeRef.current.value,
+      date: dateDisplay,
+      time: timeDisplay,
       smoke: smokeRef.current.value,
       note: bodyRef.current.value
     })
 
-    dateRef.current.value = "";
-    timeRef.current.value = "";
+    // dateRef.current.value = "";
+    // timeRef.current.value = "";
     smokeRef.current.value = "";
     bodyRef.current.value = "";
     history.push("/Dashboard")
@@ -54,6 +60,8 @@ export default function NoteUserInput() {
           aria-label="Default"
           aria-describedby="inputGroup-sizing-default"
           ref={dateRef}
+          placeholder={dateDisplay}
+          disabled
         />
       </InputGroup>
 
@@ -67,6 +75,8 @@ export default function NoteUserInput() {
           aria-label="Default"
           aria-describedby="inputGroup-sizing-default"
           ref={timeRef}
+          placeholder={timeDisplay}
+          disabled
         />
       </InputGroup>
 
