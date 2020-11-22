@@ -73,7 +73,7 @@ export const DashboardProgress = () => {
         variant="danger"
       />
 
-      <Button variant="outline-dark" className="btnInfo" onClick={handleShow}>
+      <Button variant="secondary" className="btnInfo" onClick={handleShow}>
         Edit Limit
       </Button>
 
